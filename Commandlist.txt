@@ -1,0 +1,52 @@
+COMMANDS
+
+aws cognito-idp sign-up \
+  --region us-east-1 \
+  --client-id 71k8evts9dfnku3m014s4iqtat \
+  --username admin@example.com \
+  --password Passw0rd!
+
+aws cognito-idp admin-confirm-sign-up \
+  --region us-east-1 \
+  --user-pool-id us-east-1_hjPkDizSE \
+  --username admin@example.com
+
+f8wdfydcme
+
+Identity pool ID 
+us-east-1:ff8526ba-a1c8-4aa6-aee3-4288397606d6
+
+npx aws-api-gateway-cli-test \
+--username='admin@example.com' \
+--password='Passw0rd!' \
+--user-pool-id='us-east-1_hjPkDizSE' \
+--app-client-id='71k8evts9dfnku3m014s4iqtat' \
+--cognito-region='us-east-1' \
+--identity-pool-id='us-east-1:3bd4f771-7b81-4599-becd-570ab875ecf5' \
+--invoke-url='https://f8wdfydcme.execute-api.us-east-1.amazonaws.com/prod' \
+--api-gateway-region='us-east-1' \
+--path-template='/notes' \
+--method='POST' \
+--body='{"content":"hello world","attachment":"hello.jpg"}'
+
+
+
+STRIPE
+
+Publishable key:
+pk_test_51IJVjsE3IW47gsX1WticiiFK7gkSAFvzMckBRGN9yBSDFSnr2hwjXkEsgUXWJvktuJOz94fzS7CnuBKKFR7afsDJ00L2zF8on0
+
+Secret key:
+sk_test_51IJVjsE3IW47gsX1ClCQG2e3tGQ8lO0FhflZMmB2DAwcVlqVcuXfKxjjLvJzbewwzTRILvYxbShhepOM36gBYPTg00rKyk0ZtI
+
+
+
+
+
+
+
+
+
+
+
+
